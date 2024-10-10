@@ -1,0 +1,14 @@
+
+
+.banner_img{
+  background-image: url('../assets/images/virus-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:100vh ;
+}
+
+.Cases_Overview{
+  background-color:rgb(170, 197, 237) ;
+  padding: 1rem 8%;
+}
