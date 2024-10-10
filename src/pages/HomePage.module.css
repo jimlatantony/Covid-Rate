@@ -1,14 +1,68 @@
-
+.banner_section{
+  position: relative;
+}
 
 .banner_img{
   background-image: url('../assets/images/virus-bg.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat !important;
   height:100vh ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Cases_Overview{
-  background-color:rgb(170, 197, 237) ;
+  background-color:rgb(58, 87, 130) ;
   padding: 1rem 8%;
+}
+
+.banner_content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 8%;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.banner_content_msg {
+  flex: 1;
+  color: white; 
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.banner_img {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.banner_img img {
+  max-width: 400px; 
+  height: auto;
+
+  object-fit: cover; 
+  animation: rotateImage 20s infinite linear; 
+}
+
+
+@keyframes rotateImage {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.selectBox{
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
 }
