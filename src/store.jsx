@@ -1,14 +1,14 @@
-// import { createStore } from 'redux';
+
 import { legacy_createStore as createStore } from 'redux'
 
 
-// Initial state
+
 const initialState = {
-  data: [], // This will hold the COVID data (total cases, recovered, deaths, etc.)
-  selectedState: null, // This will hold the selected state for filtering
+  data: [], 
+  selectedState: null, 
 };
 
-// Reducer function
+
 function covidReducer(state = initialState, action) {
   switch (action.type) {
     case 'SET_DATA':
@@ -26,7 +26,7 @@ function covidReducer(state = initialState, action) {
   }
 }
 
-// Create the Redux store
+
 const store = createStore(covidReducer);
 
 export default store;

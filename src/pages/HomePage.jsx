@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import classes from "./HomePage.module.css";
-import Header from "../components/Header";
 import { useDispatch, useSelector } from "react-redux";
 import { setData, setSelectedState } from "../action";
 import PieChart from "../components/PieChart";
 import LineChart from "../components/LineChart";
 import CovidMap from "../components/CovidMap";
 import banner from "../assets/images/banner.png";
+import Header from "../components/Header";
 
 const HomePage = () => {
   const dispatch = useDispatch();
